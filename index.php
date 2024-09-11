@@ -13,8 +13,12 @@
     </form>
 
    <?php
-    $name ="Nia";
-    echo $name." is a silly willy goose!";
+//This gets something from the database
+$name ="Nia";
+echo $name." is a silly willy gooooose!";
+  /*echo "Nia;
+    echo "is a silly willy gooooose!";*/
+    
     ?>
 </body>
 

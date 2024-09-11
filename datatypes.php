@@ -17,9 +17,8 @@
     $name =10.5874
 
     //Boolean
-    true = 1
-    false = 0
-
+  
+  
     //Array
     $names = array ("Ania", "Kristine", "Ross")
     echo $names['2'];
