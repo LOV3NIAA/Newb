@@ -19,9 +19,9 @@
     //Boolean
   
   
-    //Array
-    $names = array("Ania", "Kristine", "Ross");
-    echo $names['0'];
+   //Array
+   $names = array("Ania", "Kristine", "Ross");
+   echo $names['0'];
 
     ?>
 </body>
