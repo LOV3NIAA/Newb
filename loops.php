@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <a class="nav-link" href="header.php">Header</a>
+</head>
 
 <body>
 

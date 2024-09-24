@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <a class="nav-link" href="header.php">Header</a>
+</head>
 
 <body>
 
 <?php
 
-$x = "12";
+$x = "11";
 
 switch ($x){
     case 8:

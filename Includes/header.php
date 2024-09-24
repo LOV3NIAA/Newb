@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Title of the document</title>
-    <link rel= "stylesheet" type="text/css" href="style.css"
+    <link rel= "stylesheet" type="text/css" href="style.css">
   </head>
+
 <header>
   <body>
   <nav class="navbar navbar-expand-lg">
@@ -29,6 +30,7 @@
                     </div>
                 </div>
             </nav>
+
 
 </header>
 

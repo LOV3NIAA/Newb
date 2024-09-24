@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Title of Document</title>
+    <a class="nav-link" href="header.php">Header</a>
 </head>
 
 <body>
@@ -18,11 +19,10 @@
 
     //Boolean
   
-  
    //Array
    $names = array("Ania", "Kristine", "Ross");
    echo $names['0'];
-
+   
     ?>
 </body>
 
