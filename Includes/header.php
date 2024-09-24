@@ -33,7 +33,10 @@
 
 
 </header>
-
+<?php
+session_start();
+$_SESSION['username'] = 'ItsjustNiaaa'; 
+?>
 </body>
 
 </html>

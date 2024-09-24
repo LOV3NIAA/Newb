@@ -18,7 +18,11 @@ $array = array("beep", "bop", "boop", "poo");
 foreach ($array as $loopdata) {
    echo "What the ". $loopdata. "<br>";
 }
-   
+
+include 'includes/header.php';
+if(isset($_SESSION['username'])) {
+    echo "Welcome, " . $_SESSION['username'] . "! You are logged in.";
+}
 ?>
 </body>
 

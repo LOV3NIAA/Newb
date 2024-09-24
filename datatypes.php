@@ -8,6 +8,10 @@
 <body>
 <?php
 
+include 'includes/header.php';
+if(isset($_SESSION['username'])) {
+    echo "Welcome, " . $_SESSION['username'] . "! You are logged in.";
+}
     //String
     $name = 'Robotics Rock';
 

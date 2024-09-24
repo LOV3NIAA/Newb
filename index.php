@@ -19,7 +19,11 @@ $name ="Nia";
 echo $name." is a silly willy gooooose!";
   /*echo "Nia;
     echo "is a silly willy gooooose!";*/
-    
+
+    include 'includes/header.php';
+    if(isset($_SESSION['username'])) {
+        echo "Welcome, " . $_SESSION['username'] . "! You are logged in.";
+    }
     ?>
 </body>
 

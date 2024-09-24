@@ -7,7 +7,10 @@
 <body>
 
 <?php
-
+include 'includes/header.php';
+if(isset($_SESSION['username'])) {
+    echo "Welcome, " . $_SESSION['username'] . "! You are logged in.";
+}
 $x = "11";
 
 switch ($x){

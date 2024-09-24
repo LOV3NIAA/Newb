@@ -10,6 +10,10 @@
 
 <?php
 
+include 'includes/header.php';
+if(isset($_SESSION['username'])) {
+    echo "Welcome, " . $_SESSION['username'] . "! You are logged in.";
+}
     //Logical Operators
     $x = 40;
     $y = 20;
