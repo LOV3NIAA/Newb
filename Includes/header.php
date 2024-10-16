@@ -1,32 +1,64 @@
-<?php
-session_start();
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-</head>
-<body>
-<header>
-    <?php
-    if (isset($_SESSION["useruid"])) {
-        echo "<p>Welcome, " . $_SESSION["useruid"] . "!</p>";
-    }
-    ?>
-    <nav>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <?php
-            if (isset($_SESSION["useruid"])) {
-                echo '<li><a href="includes/logout.inc.php">Log out</a></li>';
-            } else {
-                echo '<li><a href="signup.php">Sign Up</a></li>';
-                echo '<li><a href="login.php">Log In</a></li>';
-            }
-            ?>
-        </ul>
-    </nav>
-</header>
-</body>
+<?php 
+
+session_start(); 
+
+?> 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+<link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/OIP.7qLodnoaTYnC2UQ_LfA3DQHaHa?rs=1&pid=ImgDetMain">
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Nia's Site</title> 
+
+</head> 
+
+<body> 
+
+<header> 
+
+    <?php 
+
+    if (isset($_SESSION["useruid"])) { 
+
+        echo "<p>Welcome, " . $_SESSION["useruid"] . "!</p>"; 
+
+    } 
+
+    ?> 
+
+    <nav> 
+
+        <ul> 
+
+ 
+
+ 
+   <a href ="home.php">Home</a>
+            
+
+            <?php 
+
+            
+                
+
+
+                
+
+          
+
+            ?> 
+
+        </ul> 
+
+    </nav> 
+
+</header> 
+
+</body> 
+         

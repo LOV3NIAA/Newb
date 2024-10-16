@@ -1,20 +1,26 @@
 <?php
-include_once 'includes/header.php';
+include_once 'Includes/header.php';
 ?>
 <h2>Log In</h2>
-<form action="includes/login.inc.php" method="POST">
-    <input type="text" name="username" placeholder="Username/Email">
-    <input type="password" name="password" placeholder="Password">
+<form action="Includes/login.inc.php" method="POST">
+    <input type="text" name="username" placeholder="Username/Email" required>
+    <input type="password" name="password" placeholder="Password" required>
     <button type="submit" name="submit">Log In</button>
 </form>
 
 <?php
+// Check if 'error' is set before accessing it
 if (isset($_GET["error"])) {
-    if ($_GET["error"] == "emptyinput") {
-        echo "<p>Fill in all fields!</p>";
-    } else if ($_GET["error"] == "wronglogin") {
-        echo "<p>Incorrect login information!</p>";
+    switch ($_GET["error"]) {
+        case "emptyinput":
+            echo "<p>Fill in all fields!</p>";
+            break;
+        case "wronglogin":
+            echo "<p>Incorrect login information!</p>";
+            break;
+        default:
+            echo "<p>Something went wrong!</p>";
     }
 }
-include_once 'includes/footer.php';
+include_once 'Includes/footer.php';
 ?>
